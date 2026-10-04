@@ -8,6 +8,7 @@ Spec-Driven Development (SDD) means you write down what a piece of software must
 
 | Path | What it is |
 |---|---|
+| `slides/RSGB_N6YU_SDD_deck.pdf` | The talk's slides as a PDF (19 pages, clickable links) |
 | `masterplan/masterplan-generator.md` | Give this to Claude Code. It interviews you and writes a masterplan for your own app. |
 | `masterplan/masterplan-starter.md` | 20 prompts, in order, for building a masterplan step by step |
 | `masterplan/masterplan-v2.md` | A worked example: the DX Spotter masterplan |
