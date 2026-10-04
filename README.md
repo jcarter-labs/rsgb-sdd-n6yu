@@ -20,4 +20,4 @@ References are in `references.md`.
 Example copied from a private build repo; references to files and repos outside this tree are not included.
 
 ## License
-TODO: license
+© 2026 John Carter (N6YU). No license is granted for reuse beyond viewing and forking on GitHub. Talk materials were prepared for RSGB Convention 2026; contact john@n6yu.com for permissions.
