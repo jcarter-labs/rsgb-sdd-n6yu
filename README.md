@@ -44,4 +44,4 @@ Everything about the build is in [github.com/jcarter-labs/dx-spotter-app](https:
 
 ## Rights
 
-© 2026 John Carter (N6YU). No license is granted for reuse beyond viewing and forking on GitHub. Talk materials were prepared for RSGB Convention 2026; contact john@n6yu.com for permissions.
+© 2026 John Carter (N6YU). Free to use and adapt for personal, non-commercial projects; attribution appreciated. Talk materials were prepared for RSGB Convention 2026; contact [john@n6yu.com](mailto:john@n6yu.com) for other uses.
