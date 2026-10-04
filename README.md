@@ -34,13 +34,13 @@ Everything about the build is in [github.com/jcarter-labs/dx-spotter-app](https:
 
 | Path | What it is |
 |---|---|
-| `slides/RSGB_N6YU_SDD_deck.pdf` | The talk's slides as a PDF (19 pages, clickable links) |
-| `masterplan/masterplan-generator.md` | Give this to Claude Code. It interviews you and writes a masterplan for your own app. |
-| `docs/sdd-flow.png` | The SDD flow diagram above, full size |
-| `docs/dx-spotter-reference.png` | The example's input: the reference look the masterplan describes |
-| `docs/dx-spotter-result.png` | The example's result: DX Spotter as built |
-| `docs/Extending_the_SDD_Approach_Beyond_Spotter.pdf` | A4 handout: applying SDD to building, porting and extending open-source and published projects |
-| `docs/references.md` | Papers, courses and projects cited in the talk |
+| [`slides/RSGB_N6YU_SDD_deck.pdf`](slides/RSGB_N6YU_SDD_deck.pdf) | The talk's slides as a PDF (19 pages, clickable links) |
+| [`masterplan/masterplan-generator.md`](masterplan/masterplan-generator.md) | Give this to Claude Code. It interviews you and writes a masterplan for your own app. |
+| [`docs/sdd-flow.png`](docs/sdd-flow.png) | The SDD flow diagram above, full size |
+| [`docs/dx-spotter-reference.png`](docs/dx-spotter-reference.png) | The example's input: the reference look the masterplan describes |
+| [`docs/dx-spotter-result.png`](docs/dx-spotter-result.png) | The example's result: DX Spotter as built |
+| [`docs/Extending_the_SDD_Approach_Beyond_Spotter.pdf`](docs/Extending_the_SDD_Approach_Beyond_Spotter.pdf) | A4 handout: applying SDD to building, porting and extending open-source and published projects |
+| [`docs/references.md`](docs/references.md) | Papers, courses and projects cited in the talk |
 
 ## Rights
 
