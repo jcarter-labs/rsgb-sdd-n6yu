@@ -18,12 +18,15 @@ Give it to Claude Code with a short description of your app idea and a screensho
 
 A CW bandmap of RBN and POTA spots, built from a short idea file and one screenshot.
 
+<div align="center">
 <table>
   <tr>
     <td align="center"><img src="docs/dx-spotter-reference.png" width="240" alt="Reference app screenshot used as the input look"><br><b>Input:</b> reference look (Linux)</td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
     <td align="center"><img src="docs/dx-spotter-result.png" width="240" alt="DX Spotter as built on macOS"><br><b>Result:</b> the app as built (macOS)</td>
   </tr>
 </table>
+</div>
 
 Everything about the build is in [github.com/jcarter-labs/dx-spotter-app](https://github.com/jcarter-labs/dx-spotter-app): the idea file ([`idea.md`](https://github.com/jcarter-labs/dx-spotter-app/blob/main/idea.md)), the example masterplan the generator produced ([`masterplan.md`](https://github.com/jcarter-labs/dx-spotter-app/blob/main/masterplan.md)), the code, the tests and the full commit history.
 
