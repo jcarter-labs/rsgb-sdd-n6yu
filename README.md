@@ -40,7 +40,7 @@ Everything about the build is in [github.com/jcarter-labs/dx-spotter-app](https:
 | [`docs/dx-spotter-reference.png`](docs/dx-spotter-reference.png) | The example's input: the reference look the masterplan describes |
 | [`docs/dx-spotter-result.png`](docs/dx-spotter-result.png) | The example's result: DX Spotter as built |
 | [`docs/rsgb-sdd-n6yu-faqs.pdf`](docs/rsgb-sdd-n6yu-faqs.pdf) | Handout: FAQs for applying SDD to building, porting and extending open-source and published projects |
-| [`docs/references.md`](docs/references.md) | Papers, courses and projects cited in the talk |
+| [`docs/rsgb-sdd-n6yu-references.md`](docs/rsgb-sdd-n6yu-references.md) | Papers, courses and projects cited in the talk |
 
 ## Rights
 
