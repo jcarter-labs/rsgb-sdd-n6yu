@@ -59,7 +59,8 @@ main{max-width:984px; margin:0 auto; padding:24px 16px 50vh}
 .keys{color:var(--muted); font-size:14px; text-align:center; margin-top:28px}
 kbd{font:inherit; border:1px solid var(--rule); border-bottom-width:2px; border-radius:4px; padding:0 5px; background:var(--card)}
 @media (max-width:600px){ :root{--fs:18px} .bar .hint{display:none} .slide{padding:14px 14px 10px} }
-@media print{ .bar,.keys{display:none} .slide{break-inside:avoid; box-shadow:none} main{padding-bottom:0} }
+@page{size:Letter portrait;margin:0.4in}
+@media print{ html{zoom:.65} body{background:#fff} .bar,.keys{display:none} .slide{break-inside:avoid; box-shadow:none; margin-bottom:6px; padding:6px 10px} main{max-width:none;padding:0} }
 </style>
 </head>
 <body>
@@ -83,7 +84,15 @@ kbd{font:inherit; border:1px solid var(--rule); border-bottom-width:2px; border-
 </ul></div>
 </section>
 <section class="slide" id="s2" tabindex="-1">
-  <header><span class="num">2</span><h2>Remote Operation in Mojave Desert</h2></header>
+  <header><span class="num">2</span><h2>Presentation on GitHub</h2></header>
+  <p class="takeaway">Scan the QR code to get the presentation PDF from GitHub.</p>
+  <div class="notes"><ul>
+<li>The QR code opens the presentation PDF in the talk repo, <code>github.com/jcarter-labs/rsgb-sdd-n6yu</code>.</li>
+<li>The repo also has the Masterplan Generator. The links are repeated in the appendix (slide 19).</li>
+</ul></div>
+</section>
+<section class="slide" id="s3" tabindex="-1">
+  <header><span class="num">3</span><h2>Remote Operation in Mojave Desert</h2></header>
   <p class="takeaway">Like many of us, I am plagued with local noise, so I like to get away. Really far away.</p>
   <div class="notes"><ul>
 <li>Shows a camp in the setup process, late in the day arriving, tent not up, sun going down.  17' vertical whip behind</li>
@@ -91,8 +100,8 @@ kbd{font:inherit; border:1px solid var(--rule); border-bottom-width:2px; border-
 <li>I have Starlink and solar out there, but no bandscope. Just an older but excellent rig, the KX3. I really like bandscopes.</li>
 </ul></div>
 </section>
-<section class="slide" id="s3" tabindex="-1">
-  <header><span class="num">3</span><h2>Software Is Replacing Solder</h2></header>
+<section class="slide" id="s4" tabindex="-1">
+  <header><span class="num">4</span><h2>Software Is Replacing Solder</h2></header>
   <p class="takeaway">AI coding is good enough for radio projects, but on its own it is neither repeatable nor structured.</p>
   <div class="notes"><ul>
 <li>Tools and test: the soldering iron and scope on the older side; modules and software on the newer side. Storage: the file cabinet becomes GitHub.</li>
@@ -100,8 +109,8 @@ kbd{font:inherit; border:1px solid var(--rule); border-bottom-width:2px; border-
 <li>There are ways to get around the drawbacks</li>
 </ul></div>
 </section>
-<section class="slide" id="s4" tabindex="-1">
-  <header><span class="num">4</span><h2>Key Terms</h2></header>
+<section class="slide" id="s5" tabindex="-1">
+  <header><span class="num">5</span><h2>Key Terms</h2></header>
   <p class="takeaway">A small shared vocabulary is all you need to follow the rest of the talk.</p>
   <div class="notes"><ul>
 <li><strong>Specs:</strong> your app's features and behaviors, in plain language with testable numbers.</li>
@@ -110,8 +119,8 @@ kbd{font:inherit; border:1px solid var(--rule); border-bottom-width:2px; border-
 <li><strong>SDD:</strong> an AI-updated plan of record. The spec stays the source of truth as the code changes.</li>
 </ul></div>
 </section>
-<section class="slide" id="s5" tabindex="-1">
-  <header><span class="num">5</span><h2>Why Did I Bother? A Poor Man's Panadapter</h2></header>
+<section class="slide" id="s6" tabindex="-1">
+  <header><span class="num">6</span><h2>Why Did I Bother? A Poor Man's Panadapter</h2></header>
   <p class="takeaway">No existing tool combined a bandscope, POTA spots, and spotter selection, so I built one.</p>
   <div class="notes"><ul>
 <li>I could tap the I/Q outputs and build a 50 kHz scope with FFT and display software, but that is a lot of hardware.  What if I just listen to local spotters?  Isn't that like a panadapter?</li>
@@ -119,46 +128,46 @@ kbd{font:inherit; border:1px solid var(--rule); border-bottom-width:2px; border-
 <li>N1MM on Windows shows a bandscope, but not POTA spots.</li>
 </ul></div>
 </section>
-<section class="slide" id="s6" tabindex="-1">
-  <header><span class="num">6</span><h2>Possible SDD Projects for Radio</h2></header>
+<section class="slide" id="s7" tabindex="-1">
+  <header><span class="num">7</span><h2>Possible SDD Projects for Radio</h2></header>
   <p class="takeaway">SDD fits almost any shack project, from platform ports to Arduino builds to station control.</p>
   <div class="notes"><ul>
 <li>This is a laundry list. SDD suits nearly anything.</li>
 <li>The screenshot is a keyer built from K6GTE's, ported from Linux to Mac.</li>
 </ul></div>
 </section>
-<section class="slide" id="s7" tabindex="-1">
-  <header><span class="num">7</span><h2>Vibe Coding, Can Be Amazing!</h2></header>
+<section class="slide" id="s8" tabindex="-1">
+  <header><span class="num">8</span><h2>Vibe Coding, Can Be Amazing!</h2></header>
   <p class="takeaway">Vibe coding nails the first 20% but leaves guessed assumptions, brittle code, and a lost chat.</p>
   <div class="notes"><ul>
 <li><strong class="poll">POLL</strong> How many of you have vibe coded?</li>
 <li><strong class="poll">POLL</strong> How many of you have used GitHub?</li>
 </ul></div>
 </section>
-<section class="slide" id="s8" tabindex="-1">
-  <header><span class="num">8</span><h2>A Better Alternative: SDD</h2></header>
+<section class="slide" id="s9" tabindex="-1">
+  <header><span class="num">9</span><h2>A Better Alternative: SDD</h2></header>
   <p class="takeaway">This is the talk in one sentence</p>
   <div class="notes"><ul>
 <li>More time up front, but faster and self documenting</li>
 </ul></div>
 </section>
-<section class="slide" id="s9" tabindex="-1">
-  <header><span class="num">9</span><h2>Preliminaries: Claude Code &amp; GitHub Setup</h2></header>
+<section class="slide" id="s10" tabindex="-1">
+  <header><span class="num">10</span><h2>Preliminaries: Claude Code &amp; GitHub Setup</h2></header>
   <p class="takeaway">Claude is vastly more powerful than chat.</p>
   <div class="notes"><ul>
 <li>Claude Code is now available in Claude Desktop (little toggle in upper left)</li>
 <li><strong>GitHub is a Superpower.</strong> Claude can help you figure it out.</li>
 </ul></div>
 </section>
-<section class="slide" id="s10" tabindex="-1">
-  <header><span class="num">10</span><h2>Masterplan Generator + Idea + Screenshot</h2></header>
+<section class="slide" id="s11" tabindex="-1">
+  <header><span class="num">11</span><h2>Masterplan Generator + Idea + Screenshot</h2></header>
   <p class="takeaway"><strong>This is the talk in one slide.</strong></p>
   <div class="notes"><ul>
 <li>The name is not special; call it anything. The contents are not unique either. The four sections come from best practices at many tech companies (Amazon, Anthropic, Microsoft).</li>
 </ul></div>
 </section>
-<section class="slide" id="s11" tabindex="-1">
-  <header><span class="num">11</span><h2>Use Generator + Your Idea to Create a Masterplan</h2></header>
+<section class="slide" id="s12" tabindex="-1">
+  <header><span class="num">12</span><h2>Use Generator + Your Idea to Create a Masterplan</h2></header>
   <p class="takeaway">Constitution, Spec, Tech, Tasks: four steps from idea to a buildable plan.</p>
   <div class="notes"><ul>
 <li><strong>Constitution (how we work): another Superpower.</strong> Use the Generator's prompts as-is. These are ground rules, and they keep you out of vibing trouble.</li>
@@ -166,49 +175,49 @@ kbd{font:inherit; border:1px solid var(--rule); border-bottom-width:2px; border-
 <li><strong>Tech (built with):</strong> If you don't know the answers, use Claude Desktop (or another Claude Code instance) to help fill it in.</li>
 </ul></div>
 </section>
-<section class="slide" id="s12" tabindex="-1">
-  <header><span class="num">12</span><h2>Example: Idea + Screenshot → Masterplan Generator</h2></header>
+<section class="slide" id="s13" tabindex="-1">
+  <header><span class="num">13</span><h2>Example: Idea + Screenshot → Masterplan Generator</h2></header>
   <p class="takeaway">A short idea plus one screenshot is enough input; the generator interviews you for the rest.</p>
   
 </section>
-<section class="slide" id="s13" tabindex="-1">
-  <header><span class="num">13</span><h2>The Masterplan Generator (Download from Link in Appendix)</h2></header>
+<section class="slide" id="s14" tabindex="-1">
+  <header><span class="num">14</span><h2>The Masterplan Generator (Download from Link in Appendix)</h2></header>
   <p class="takeaway">The generator lives on GitHub as plain, readable text anyone can open and reuse.</p>
   <div class="notes"><ul>
 <li>Each prompt carries a label: RULE (follow it during the build), DRAFT (write this part now and show me), USER INPUT (ask me first).</li>
 </ul></div>
 </section>
-<section class="slide" id="s14" tabindex="-1">
-  <header><span class="num">14</span><h2>Claude Code and Claude Desktop as Helper</h2></header>
+<section class="slide" id="s15" tabindex="-1">
+  <header><span class="num">15</span><h2>Claude Code and Claude Desktop as Helper</h2></header>
   <p class="takeaway"><strong>Superpower:</strong> when Code's output is confusing, ask Desktop to explain and paste the answer back.</p>
   
 </section>
-<section class="slide" id="s15" tabindex="-1">
-  <header><span class="num">15</span><h2>It Works! Multiplatform Screenshots</h2></header>
+<section class="slide" id="s16" tabindex="-1">
+  <header><span class="num">16</span><h2>It Works! Multiplatform Screenshots</h2></header>
   <p class="takeaway">One spec produced the same working app on Mac, Windows, and Linux.</p>
   
 </section>
-<section class="slide" id="s16" tabindex="-1">
-  <header><span class="num">16</span><h2>Conclusion</h2></header>
+<section class="slide" id="s17" tabindex="-1">
+  <header><span class="num">17</span><h2>Conclusion</h2></header>
   <p class="takeaway">Vibe coding gets you started; the masterplan gets you finished, so start small with your own idea.</p>
   <div class="notes"><ul>
 <li>Call back to the opening: like a schematic, the spec is what you keep and share.</li>
 <li>The QR code points to the GitHub repo for this talk, which has the Masterplan Generator and the presentation. Your first masterplan starts here.</li>
 </ul></div>
 </section>
-<section class="slide" id="s17" tabindex="-1">
-  <header><span class="num">17</span><h2>Time for Your Road Trip! Your Idea (Questions?)</h2></header>
+<section class="slide" id="s18" tabindex="-1">
+  <header><span class="num">18</span><h2>Time for Your Road Trip! Your Idea (Questions?)</h2></header>
   <p class="takeaway">Close on the road-trip image and open the floor: Claude Code and GitHub are the transportation, your idea is the trip.</p>
   <div class="notes"><ul>
-<li>Callback to slide 2: same desert trails. The idea is the destination, Claude Code and GitHub are the vehicle, and the spec is the plan you drive from.</li>
+<li>Callback to slide 3: same desert trails. The idea is the destination, Claude Code and GitHub are the vehicle, and the spec is the plan you drive from.</li>
 <li>Invite questions. Leave this slide up through Q&amp;A.</li>
-<li>Keep the slide numbers handy. Type a number to jump: <strong>13</strong> for the generator, <strong>18</strong> for the repo links, <strong>19</strong> for references, <strong>22</strong> for the DX Spotter feature list.</li>
-<li>If someone asks for the side-by-side of vibe coding and SDD, slide 21 is in the backup section.</li>
+<li>Keep the slide numbers handy. Type a number to jump: <strong>14</strong> for the generator, <strong>19</strong> for the repo links, <strong>20</strong> for references, <strong>23</strong> for the DX Spotter feature list.</li>
+<li>If someone asks for the side-by-side of vibe coding and SDD, slide 22 is in the backup section.</li>
 </ul></div>
 </section>
 <h2 class="divider">Appendix</h2>
-<section class="slide" id="s18" tabindex="-1">
-  <header><span class="num">18</span><h2>Appendix – GitHub Links</h2></header>
+<section class="slide" id="s19" tabindex="-1">
+  <header><span class="num">19</span><h2>Appendix – GitHub Links</h2></header>
   <p class="takeaway">Everything shown today is in two repos, one for the talk and one for the app.</p>
   <div class="notes"><ul>
 <li>Talk repo: <code>github.com/jcarter-labs/rsgb-sdd-n6yu</code>. It has the slides, the example masterplan, and the Masterplan Generator.</li>
@@ -217,13 +226,13 @@ kbd{font:inherit; border:1px solid var(--rule); border-bottom-width:2px; border-
 <li>Contact: John Carter, N6YU, john@n6yu.com, <code>github.com/jcarter-labs</code>.</li>
 </ul></div>
 </section>
-<section class="slide" id="s19" tabindex="-1">
-  <header><span class="num">19</span><h2>Appendix – References</h2></header>
+<section class="slide" id="s20" tabindex="-1">
+  <header><span class="num">20</span><h2>Appendix – References</h2></header>
   <p class="takeaway">Where to go deeper on SDD and Claude Code.</p>
   
 </section>
-<section class="slide" id="s20" tabindex="-1">
-  <header><span class="num">20</span><h2>Find out more… (closing)</h2></header>
+<section class="slide" id="s21" tabindex="-1">
+  <header><span class="num">21</span><h2>Find out more… (closing)</h2></header>
   <p class="takeaway">How to reach me.</p>
   <div class="notes"><ul>
 <li>John Carter, N6YU, john@n6yu.com, <code>github.com/jcarter-labs</code>.</li>
@@ -231,8 +240,8 @@ kbd{font:inherit; border:1px solid var(--rule); border-bottom-width:2px; border-
 </section>
 <h2 class="divider">Backup</h2>
 <p class="divnote">These two slides sit after the closing slide in the deck. They are not in the main flow.</p>
-<section class="slide" id="s21" tabindex="-1">
-  <header><span class="num">21</span><h2>Vibe Prompt vs. SDD</h2></header>
+<section class="slide" id="s22" tabindex="-1">
+  <header><span class="num">22</span><h2>Vibe Prompt vs. SDD</h2></header>
   <p class="takeaway">SDD trades a slower start for tested, repeatable, shareable results you can change later.</p>
   <div class="notes"><ul>
 <li>Give the AI the basic idea <em>plus a screenshot</em>, then have it build the spec, i.e. the masterplan.</li>
@@ -240,8 +249,8 @@ kbd{font:inherit; border:1px solid var(--rule); border-bottom-width:2px; border-
 <li>The honest cost is the Speed row: SDD has a slower start and more work up front. The payoff is the Later row: edit the spec, rebuild from GitHub, add features or change OS.</li>
 </ul></div>
 </section>
-<section class="slide" id="s22" tabindex="-1">
-  <header><span class="num">22</span><h2>DX Spotter | The Working Result</h2></header>
+<section class="slide" id="s23" tabindex="-1">
+  <header><span class="num">23</span><h2>DX Spotter | The Working Result</h2></header>
   <p class="takeaway">The spec-built app works: live RBN bandmap, POTA hunting, and three cluster types.</p>
   <div class="notes"><ul>
 <li>Bandmap: live RBN spots with an adjustable window, working (compared with N1MM).</li>
