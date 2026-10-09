@@ -1,5 +1,15 @@
 # The Spec Is the New Schematic
 
+<div align="center">
+
+<h1><a href="slides/rsgb-sdd-n6yu-presentation.pdf">&#128196; RSGB Convention<br>&ldquo;The Spec Is the New Schematic&rdquo;<br>Presentation</a></h1>
+
+<h3><a href="slides/rsgb-sdd-n6yu-presentation.pdf">Open the slides (PDF)</a> &nbsp;&middot;&nbsp; <a href="https://github.com/jcarter-labs/rsgb-sdd-n6yu/raw/main/slides/rsgb-sdd-n6yu-presentation.pdf">Download the PDF</a></h3>
+
+</div>
+
+---
+
 **Reproducible Station Software with Spec-Driven Development (SDD)**
 RSGB Convention 2026 (9–11 October) · John Carter, N6YU
 
