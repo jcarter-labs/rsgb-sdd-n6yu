@@ -60,7 +60,7 @@ New to Claude Code, or already using it? Either works. If you have a `CLAUDE.md`
 6. **Paste the setup line:**
 
    ```
-   PASTE: Create masterplan.md with only four empty section headings: Constitution, Spec, Tech, Tasks; don't fill them in. If it exists, show it instead. Read idea.md, my screenshot, and any CLAUDE.md in this folder; list any conflicts, and any memory notes you're using, one line each, for me to decide.
+   PASTE: Create masterplan.md with only four empty section headings: Ground Rules, Project Brief, Architecture, Task Plan; don't fill them in. Put one line under each: Ground Rules, how we work, and they override everything else; Project Brief, what the app does and how we'll check it; Architecture, what it's built with, and it constrains the Task Plan; Task Plan, ordered tasks with dependencies and done-criteria. If it exists, show it instead. Read idea.md, my screenshot, and any CLAUDE.md in this folder; list any conflicts, and any memory notes you're using, one line each, for me to decide.
    ```
 
 7. **Paste the legend** once. This is how the agent learns the labels:
@@ -69,17 +69,17 @@ New to Claude Code, or already using it? Either works. If you have a `CLAUDE.md`
    PASTE: Each line I send starts with a label. RULE: add it to masterplan.md as written; follow it during the build, not now. DRAFT: write that part of masterplan.md, then show me for review. USER INPUT: ask me first, then write my answer into masterplan.md. SET: write my answer into masterplan.md as given. Put each line in the section it's pasted under. Sections come in order; don't draft ahead.
    ```
 
-## 1. Constitution: how we work *(paste all five at once)*
+## 1. Ground Rules: how we work *(paste all five at once)*
 
 ```
 RULE: Build from masterplan.md, idea.md and my screenshot; borrow language, tools, specs, or open-source code from examples as I choose.
 RULE: At the start of the build, check tools, libraries, GitHub login, that this folder is its own repo root, and that each data source's host and port can be reached, on my platforms; show pass/fail.
-RULE: After each change, measure the app against the Spec's screen list; show pass/fail.
+RULE: After each change, measure the app against the Project Brief's screen list; show pass/fail.
 RULE: After each working step: run all tests, show me proof, commit, and push to GitHub. Keep going within a stage; stop only at stage end, on a failed test, after two failed fixes, or for my decision.
 RULE: When code and masterplan disagree, propose only major changes, one line each; update the masterplan after I approve.
 ```
 
-## 2. Spec: what the app does *(one at a time)*
+## 2. Project Brief: what the app does *(one at a time)*
 
 ```
 DRAFT: Summarize what my app does in a few sentences, from idea.md, my screenshot, and any example app.
@@ -97,7 +97,7 @@ DRAFT: List where my app's data comes from, and how we'll check each source work
 USER INPUT: Ask which features from idea.md my app must do this iteration, and which wait; suggest if I'm unsure.
 ```
 
-## 3. Tech: what it's built with *(one at a time)*
+## 3. Architecture: what it's built with *(one at a time)*
 
 ```
 USER INPUT: Recommend a language and tools, Python unless my example suggests better; explain each and let me choose.
@@ -115,7 +115,7 @@ DRAFT: Propose a handful of well-structured modules, one line each, each testabl
 RULE: Keep a short list of known limitations in the masterplan; update it as we go.
 ```
 
-## 4. Tasks: in what order *(one at a time)*
+## 4. Task Plan: in what order *(one at a time)*
 
 ```
 DRAFT: Break the build into about 5 stages: environment (including measuring my screenshot with a script), data connections tested on live servers and ending with a bare window showing live data, core logic, features, and UI. Give each stage sub-steps and one done-when line.

@@ -15,7 +15,7 @@ RSGB Convention 2026 (9–11 October) · John Carter, N6YU
 
 Spec-Driven Development (SDD) means you write down what a piece of software must do, in plain language with testable numbers, and have an AI coding assistant build it from that document. The spec plays the role the schematic plays in a hardware project: when the build is wrong, you fix the spec, not the output.
 
-[![SDD flow. Three inputs, the Masterplan Generator, idea.md and a screenshot, feed the Masterplan Phase: Constitution, Spec, Tech Stack, Tasks. That phase produces a Customized Masterplan for Coding, which drives the Coding and Testing Phase: Task 1, Task 2 and so on, ending in a Verified App.](docs/rsgb-sdd-n6yu-flow.png)](docs/rsgb-sdd-n6yu-flow.png)
+[![SDD flow. Three inputs, the Masterplan Generator, idea.md and a screenshot, feed the Masterplan Phase: Ground Rules, Project Brief, Architecture, Task Plan. That phase produces a Customized Masterplan for Coding, which drives the Coding and Testing Phase: Task 1, Task 2 and so on, ending in a Verified App.](docs/rsgb-sdd-n6yu-flow.png)](docs/rsgb-sdd-n6yu-flow.png)
 
 *Click the diagram for the full-size image.*
 

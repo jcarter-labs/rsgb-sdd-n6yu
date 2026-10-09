@@ -5,9 +5,11 @@ John Carter, N6YU — RSGB Convention 2026 · ~35 min talk + Q&A
 
 ## 1. The Spec Is the New Schematic
 **Takeaway:** **A spec does for an AI-built program what a schematic does for a radio**
-- The title only hints at the talk; it is really about taking vibe coding to the next level.
+
 - A schematic lets someone somewhat skilled understand and recreate a project.
-- A spec does the same for software: it guides a builder. It is not a detailed description with PCB layout, testing, alignment, and a BOM.
+- A spec does the same for software: it guides a builder. 
+- A schematic It is not a detailed project description with PCB layout, testing, alignment, and a BOM.
+- Taking vibe coding to the next level.
 
 ## 2. Presentation on GitHub
 **Takeaway:** Scan the QR code to get the presentation PDF from GitHub.
@@ -28,8 +30,8 @@ John Carter, N6YU — RSGB Convention 2026 · ~35 min talk + Q&A
 
 ## 5. Key Terms
 **Takeaway:** A small shared vocabulary is all you need to follow the rest of the talk.
-- **Specs:** your app's features and behaviors, in plain language with testable numbers.
-- **Masterplan:** the spec plus the rules, the tech choices, and the ordered tasks for building your app.
+- **Spec:** the AI community's name for a Masterplan, the whole document.
+- **Masterplan:** your app's Ground Rules, Project Brief, Architecture, and Task Plan in one document.
 - **Masterplan Generator:** a document that guides you in writing a masterplan for your app. It makes complex software buildable without software-engineering skills.
 - **SDD:** an AI-updated plan of record. The spec stays the source of truth as the code changes.
 
@@ -63,10 +65,10 @@ John Carter, N6YU — RSGB Convention 2026 · ~35 min talk + Q&A
 - The name is not special; call it anything. The contents are not unique either. The four sections come from best practices at many tech companies (Amazon, Anthropic, Microsoft).
 
 ## 12. Use Generator + Your Idea to Create a Masterplan
-**Takeaway:** Constitution, Spec, Tech, Tasks: four steps from idea to a buildable plan.
-- **Constitution (how we work): another Superpower.** Use the Generator's prompts as-is. These are ground rules, and they keep you out of vibing trouble.
-- **Spec (what it does):** give Claude your app idea, and the Generator asks you questions to customize the spec. This is where the unknown unknowns come out.
-- **Tech (built with):** If you don't know the answers, use Claude Desktop (or another Claude Code instance) to help fill it in.
+**Takeaway:** Ground Rules, Project Brief, Architecture, Task Plan: four steps from idea to a buildable plan.
+- **Ground Rules (how we work): another Superpower.** Use the Generator's prompts as-is. They keep you out of vibing trouble.
+- **Project Brief (what it does):** give Claude your app idea, and the Generator asks you questions to customize the Project Brief. This is where the unknown unknowns come out.
+- **Architecture (built with):** If you don't know the answers, use Claude Desktop (or another Claude Code instance) to help fill it in.
 
 ## 13. Example: Idea + Screenshot → Masterplan Generator
 **Takeaway:** A short idea plus one screenshot is enough input; the generator interviews you for the rest.
@@ -119,7 +121,7 @@ These two slides sit after the closing slide in the deck. They are not in the ma
 **Takeaway:** SDD trades a slower start for tested, repeatable, shareable results you can change later.
 - Give the AI the basic idea *plus a screenshot*, then have it build the spec, i.e. the masterplan.
 - Walk the rows: Prompt, Details, Testing, Speed, Later.
-- The honest cost is the Speed row: SDD has a slower start and more work up front. The payoff is the Later row: edit the spec, rebuild from GitHub, add features or change OS.
+- The honest cost is the Speed row: SDD has a slower start and more work up front. The payoff is the Later row: edit the masterplan, rebuild from GitHub, add features or change OS.
 
 ### 23. DX Spotter | The Working Result
 **Takeaway:** The spec-built app works: live RBN bandmap, POTA hunting, and three cluster types.
