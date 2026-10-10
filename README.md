@@ -15,7 +15,7 @@ RSGB Convention 2026 (9–11 October) · John Carter, N6YU
 
 Spec-Driven Development (SDD) means you write down what a piece of software must do, in plain language with testable numbers, and have an AI coding assistant build it from that document. The spec plays the role the schematic plays in a hardware project: when the build is wrong, you fix the spec, not the output.
 
-[![SDD flow. Three inputs, the Masterplan Generator, idea.md and a screenshot, feed the Masterplan Phase: Ground Rules, Project Brief, Architecture, Task Plan. That phase produces a Customized Masterplan for Coding, which drives the Coding and Testing Phase: Task 1, Task 2 and so on, ending in a Verified App.](docs/rsgb-sdd-n6yu-flow.png)](docs/rsgb-sdd-n6yu-flow.png)
+[![SDD flow. Three inputs, the Masterplan Generator, an idea and a screenshot, feed the Masterplan Phase: Ground Rules, Project Brief, Architecture, Task Plan. That phase produces a Customized Masterplan for Coding, which drives the Coding and Testing Phase: Task 1, Task 2 and so on, ending in a Verified App.](docs/rsgb-sdd-n6yu-flow.png)](docs/rsgb-sdd-n6yu-flow.png)
 
 *Click the diagram for the full-size image.*
 
@@ -44,9 +44,10 @@ Everything about the build is in [github.com/jcarter-labs/dx-spotter-app](https:
 
 | Path | What it is |
 |---|---|
-| [`slides/rsgb-sdd-n6yu-presentation.pdf`](slides/rsgb-sdd-n6yu-presentation.pdf) | The talk's slides as a PDF (19 pages, clickable links) |
+| [`slides/rsgb-sdd-n6yu-presentation.pdf`](slides/rsgb-sdd-n6yu-presentation.pdf) | The talk's slides as a PDF (23 pages, clickable links) |
 | [`masterplan/masterplan-generator.md`](masterplan/masterplan-generator.md) | Give this to Claude Code. It interviews you and writes a masterplan for your own app. |
 | [`docs/rsgb-sdd-n6yu-flow.png`](docs/rsgb-sdd-n6yu-flow.png) | The SDD flow diagram above, full size |
+| [`docs/rsgb-sdd-n6yu-generator-figure.png`](docs/rsgb-sdd-n6yu-generator-figure.png) | The Masterplan Generator's four sections at a glance, as one figure |
 | [`docs/dx-spotter-reference.png`](docs/dx-spotter-reference.png) | The example's input: the reference look the masterplan describes |
 | [`docs/dx-spotter-result.png`](docs/dx-spotter-result.png) | The example's result: DX Spotter as built |
 | [`docs/rsgb-sdd-n6yu-idea-raw-prompt.md`](docs/rsgb-sdd-n6yu-idea-raw-prompt.md) | The example's raw prompt: my first words, as typed, before the interview turned them into the idea file |

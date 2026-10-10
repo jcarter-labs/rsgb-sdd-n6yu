@@ -80,30 +80,31 @@ kbd{font:inherit; border:1px solid var(--rule); border-bottom-width:2px; border-
   <div class="notes"><ul>
 <li>A schematic lets someone somewhat skilled understand and recreate a project.</li>
 <li>A spec does the same for software: it guides a builder.</li>
-<li>A schematic It is not a detailed project description with PCB layout, testing, alignment, and a BOM.</li>
+<li>A schematic is not a detailed project description with PCB layout, testing, alignment, and a BOM.</li>
 <li>Taking vibe coding to the next level.</li>
 </ul></div>
 </section>
 <section class="slide" id="s2" tabindex="-1">
-  <header><span class="num">2</span><h2>Presentation on GitHub</h2></header>
-  <p class="takeaway">Scan the QR code to get the presentation PDF from GitHub.</p>
+  <header><span class="num">2</span><h2>Presentation Available on GitHub</h2></header>
+  <p class="takeaway">Scan the QR code to follow along with the presentation, now or later.</p>
   <div class="notes"><ul>
-<li>The QR code opens the presentation PDF in the talk repo, <code>github.com/jcarter-labs/rsgb-sdd-n6yu</code>.</li>
-<li>The repo also has the Masterplan Generator. The links are repeated in the appendix (slide 19).</li>
+<li>Viewing is optional: the QR code opens the presentation, so you can follow along or look at it later.</li>
+<li>The QR code opens the talk repo on GitHub; the slides PDF is linked at the top of the page.</li>
+<li>The talk repo, <code>github.com/jcarter-labs/rsgb-sdd-n6yu</code>, also has the Masterplan Generator. The links are repeated in the appendix (slide 19).</li>
 </ul></div>
 </section>
 <section class="slide" id="s3" tabindex="-1">
   <header><span class="num">3</span><h2>Remote Operation in Mojave Desert</h2></header>
   <p class="takeaway">Like many of us, I am plagued with local noise, so I like to get away. Really far away.</p>
   <div class="notes"><ul>
-<li>Shows a camp in the setup process, late in the day arriving, tent not up, sun going down.  17' vertical whip behind</li>
+<li>Shows a camp in the setup process, late in the day arriving, tent not up, sun going down. 17' vertical whip antenna.</li>
 <li>The map shows roughly where in the Mojave 350 mi from home, 120 mi from LA, close to nothing but the desert town "Boron".</li>
-<li>I have Starlink and solar out there, but no bandscope. Just an older but excellent rig, the KX3. I really like bandscopes.</li>
+<li>I have Starlink and solar out there, but no panadapter. Just an older but excellent rig, the KX3. I really like panadapters.</li>
 </ul></div>
 </section>
 <section class="slide" id="s4" tabindex="-1">
   <header><span class="num">4</span><h2>Software Is Replacing Solder</h2></header>
-  <p class="takeaway">AI coding is good enough for radio projects, but on its own it is neither repeatable nor structured.</p>
+  <p class="takeaway">AI coding is like building an engineering prototype - not as good as off product line, but fully functional.</p>
   <div class="notes"><ul>
 <li>Tools and test: the soldering iron and scope on the older side; modules and software on the newer side. Storage: the file cabinet becomes GitHub.</li>
 <li>For a sense of how big radio software has become, look at a modern logger: rig control, internet, display, database, callsign lookup, propagation, and more.</li>
@@ -115,14 +116,14 @@ kbd{font:inherit; border:1px solid var(--rule); border-bottom-width:2px; border-
   <p class="takeaway">A small shared vocabulary is all you need to follow the rest of the talk.</p>
   <div class="notes"><ul>
 <li><strong>Spec:</strong> the AI community's name for a Masterplan, the whole document.</li>
-<li><strong>Masterplan:</strong> your app's Ground Rules, Project Brief, Architecture, and Task Plan in one document.</li>
+<li><strong>Masterplan (MP):</strong> the 4-part Spec for your app: Ground Rules, Project Brief, Architecture, and Task Plan.</li>
 <li><strong>Masterplan Generator:</strong> a document that guides you in writing a masterplan for your app. It makes complex software buildable without software-engineering skills.</li>
-<li><strong>SDD:</strong> an AI-updated plan of record. The spec stays the source of truth as the code changes.</li>
+<li><strong>SDD:</strong> Spec-Driven Development, a process. The spec stays the source of truth as the code changes.</li>
 </ul></div>
 </section>
 <section class="slide" id="s6" tabindex="-1">
   <header><span class="num">6</span><h2>Why Did I Bother? A Poor Man's Panadapter</h2></header>
-  <p class="takeaway">No existing tool combined a bandscope, POTA spots, and spotter selection, so I built one.</p>
+  <p class="takeaway">No existing app combined a band-scope, POTA spots, and spotter selection, so I built one.</p>
   <div class="notes"><ul>
 <li>I could tap the I/Q outputs and build a 50 kHz scope with FFT and display software, but that is a lot of hardware.  What if I just listen to local spotters?  Isn't that like a panadapter?</li>
 <li>POTA.APP shows maps and spots for hunting, but its interface prioritizes the map, not a bandscope.</li>
@@ -147,9 +148,11 @@ kbd{font:inherit; border:1px solid var(--rule); border-bottom-width:2px; border-
 </section>
 <section class="slide" id="s9" tabindex="-1">
   <header><span class="num">9</span><h2>A Better Alternative: SDD</h2></header>
-  <p class="takeaway">This is the talk in one sentence</p>
+  <p class="takeaway">The model is better at extracting requirements from you than you are at defining them.</p>
   <div class="notes"><ul>
-<li>More time up front, but faster and self documenting</li>
+<li>Vibing wasn't working for organizations. SDD is not rigid, comes in many forms, and is still developing.</li>
+<li>The process uses AI to extract requirements: the model is better at extracting requirements from you than you are at defining them.</li>
+<li>Overall time is shorter: more time on the spec, less on coding and debugging. It is also self-documenting.</li>
 </ul></div>
 </section>
 <section class="slide" id="s10" tabindex="-1">
@@ -174,6 +177,7 @@ kbd{font:inherit; border:1px solid var(--rule); border-bottom-width:2px; border-
 <li><strong>Ground Rules (how we work): another Superpower.</strong> Use the Generator's prompts as-is. They keep you out of vibing trouble.</li>
 <li><strong>Project Brief (what it does):</strong> give Claude your app idea, and the Generator asks you questions to customize the Project Brief. This is where the unknown unknowns come out.</li>
 <li><strong>Architecture (built with):</strong> If you don't know the answers, use Claude Desktop (or another Claude Code instance) to help fill it in.</li>
+<li><strong>Task Plan (in what order):</strong> the Generator structures the project into about 5 chunks: Setup, Connections, Core Logic, Main Features, UI.</li>
 </ul></div>
 </section>
 <section class="slide" id="s13" tabindex="-1">
@@ -189,12 +193,12 @@ kbd{font:inherit; border:1px solid var(--rule); border-bottom-width:2px; border-
 </ul></div>
 </section>
 <section class="slide" id="s15" tabindex="-1">
-  <header><span class="num">15</span><h2>Claude Code and Claude Desktop as Helper</h2></header>
+  <header><span class="num">15</span><h2>Claude Code with Claude Desktop as Helper (Screenshot)</h2></header>
   <p class="takeaway"><strong>Superpower:</strong> when Code's output is confusing, ask Desktop to explain and paste the answer back.</p>
   
 </section>
 <section class="slide" id="s16" tabindex="-1">
-  <header><span class="num">16</span><h2>It Works! Multiplatform Screenshots</h2></header>
+  <header><span class="num">16</span><h2>It Works! Multiplatform Screenshots (QR Link in Appendix)</h2></header>
   <p class="takeaway">One spec produced the same working app on Mac, Windows, and Linux.</p>
   
 </section>
@@ -221,8 +225,8 @@ kbd{font:inherit; border:1px solid var(--rule); border-bottom-width:2px; border-
   <header><span class="num">19</span><h2>Appendix – GitHub Links</h2></header>
   <p class="takeaway">Everything shown today is in two repos, one for the talk and one for the app.</p>
   <div class="notes"><ul>
-<li>Talk repo: <code>github.com/jcarter-labs/rsgb-sdd-n6yu</code>. It has the slides, the example masterplan, and the Masterplan Generator.</li>
-<li>Code repo: <code>github.com/jcarter-labs/dx-spotter-app</code>. It has the DX Spotter app.</li>
+<li>Talk repo: <code>github.com/jcarter-labs/rsgb-sdd-n6yu</code>. It has the slides and the Masterplan Generator.</li>
+<li>Code repo: <code>github.com/jcarter-labs/dx-spotter-app</code>. It has the DX Spotter app and its example masterplan.</li>
 <li>The QR codes on the slide point to each repo.</li>
 <li>Contact: John Carter, N6YU, john@n6yu.com, <code>github.com/jcarter-labs</code>.</li>
 </ul></div>
