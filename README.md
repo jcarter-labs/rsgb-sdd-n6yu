@@ -44,7 +44,7 @@ Everything about the build is in [github.com/jcarter-labs/dx-spotter-app](https:
 
 | Path | What it is |
 |---|---|
-| [`slides/rsgb-sdd-n6yu-presentation.pdf`](slides/rsgb-sdd-n6yu-presentation.pdf) | The talk's slides as a PDF (23 pages, clickable links) |
+| [`slides/rsgb-sdd-n6yu-presentation.pdf`](slides/rsgb-sdd-n6yu-presentation.pdf) | The talk's slides as a PDF (20 pages, clickable links) |
 | [`masterplan/masterplan-generator.md`](masterplan/masterplan-generator.md) | Give this to Claude Code. It interviews you and writes a masterplan for your own app. |
 | [`docs/rsgb-sdd-n6yu-flow.png`](docs/rsgb-sdd-n6yu-flow.png) | The SDD flow diagram above, full size |
 | [`docs/rsgb-sdd-n6yu-generator-figure.png`](docs/rsgb-sdd-n6yu-generator-figure.png) | The Masterplan Generator's four sections at a glance, as one figure |

@@ -90,20 +90,11 @@ kbd{font:inherit; border:1px solid var(--rule); border-bottom-width:2px; border-
   <div class="notes"><ul>
 <li>Viewing is optional: the QR code opens the presentation, so you can follow along or look at it later.</li>
 <li>The QR code opens the talk repo on GitHub; the slides PDF is linked at the top of the page.</li>
-<li>The talk repo, <code>github.com/jcarter-labs/rsgb-sdd-n6yu</code>, also has the Masterplan Generator. The links are repeated in the appendix (slide 19).</li>
+<li>The talk repo, <code>github.com/jcarter-labs/rsgb-sdd-n6yu</code>, also has the Masterplan Generator. The link is repeated on the conclusion slide (17).</li>
 </ul></div>
 </section>
 <section class="slide" id="s3" tabindex="-1">
-  <header><span class="num">3</span><h2>Remote Operation in Mojave Desert</h2></header>
-  <p class="takeaway">Like many of us, I am plagued with local noise, so I like to get away. Really far away.</p>
-  <div class="notes"><ul>
-<li>Shows a camp in the setup process, late in the day arriving, tent not up, sun going down. 17' vertical whip antenna.</li>
-<li>The map shows roughly where in the Mojave 350 mi from home, 120 mi from LA, close to nothing but the desert town "Boron".</li>
-<li>I have Starlink and solar out there, but no panadapter. Just an older but excellent rig, the KX3. I really like panadapters.</li>
-</ul></div>
-</section>
-<section class="slide" id="s4" tabindex="-1">
-  <header><span class="num">4</span><h2>Software Is Replacing Solder</h2></header>
+  <header><span class="num">3</span><h2>Software Is Replacing Solder</h2></header>
   <p class="takeaway">AI coding is like building an engineering prototype - not as good as off product line, but fully functional.</p>
   <div class="notes"><ul>
 <li>Tools and test: the soldering iron and scope on the older side; modules and software on the newer side. Storage: the file cabinet becomes GitHub.</li>
@@ -111,18 +102,17 @@ kbd{font:inherit; border:1px solid var(--rule); border-bottom-width:2px; border-
 <li>There are ways to get around the drawbacks</li>
 </ul></div>
 </section>
-<section class="slide" id="s5" tabindex="-1">
-  <header><span class="num">5</span><h2>Key Terms</h2></header>
-  <p class="takeaway">A small shared vocabulary is all you need to follow the rest of the talk.</p>
+<section class="slide" id="s4" tabindex="-1">
+  <header><span class="num">4</span><h2>Remote Operation in Mojave Desert</h2></header>
+  <p class="takeaway">Like many of us, I am plagued with local noise, so I like to get away. Really far away.</p>
   <div class="notes"><ul>
-<li><strong>Spec:</strong> the AI community's name for a Masterplan, the whole document.</li>
-<li><strong>Masterplan (MP):</strong> the 4-part Spec for your app: Ground Rules, Project Brief, Architecture, and Task Plan.</li>
-<li><strong>Masterplan Generator:</strong> a document that guides you in writing a masterplan for your app. It makes complex software buildable without software-engineering skills.</li>
-<li><strong>SDD:</strong> Spec-Driven Development, a process. The spec stays the source of truth as the code changes.</li>
+<li>Shows a camp in the setup process, late in the day arriving, tent not up, sun going down. 17' vertical whip antenna.</li>
+<li>The map shows roughly where in the Mojave 350 mi from home, 120 mi from LA, close to nothing but the desert town "Boron".</li>
+<li>I have Starlink and solar out there, but no panadapter. Just an older but excellent rig, the KX3. I really like panadapters.</li>
 </ul></div>
 </section>
-<section class="slide" id="s6" tabindex="-1">
-  <header><span class="num">6</span><h2>Why Did I Bother? A Poor Man's Panadapter</h2></header>
+<section class="slide" id="s5" tabindex="-1">
+  <header><span class="num">5</span><h2>Why Did I Bother? A Poor Man's Panadapter</h2></header>
   <p class="takeaway">No existing app combined a band-scope, POTA spots, and spotter selection, so I built one.</p>
   <div class="notes"><ul>
 <li>I could tap the I/Q outputs and build a 50 kHz scope with FFT and display software, but that is a lot of hardware.  What if I just listen to local spotters?  Isn't that like a panadapter?</li>
@@ -130,20 +120,30 @@ kbd{font:inherit; border:1px solid var(--rule); border-bottom-width:2px; border-
 <li>N1MM on Windows shows a bandscope, but not POTA spots.</li>
 </ul></div>
 </section>
-<section class="slide" id="s7" tabindex="-1">
-  <header><span class="num">7</span><h2>Possible SDD Projects for Radio</h2></header>
+<section class="slide" id="s6" tabindex="-1">
+  <header><span class="num">6</span><h2>Possible SDD Projects for Radio</h2></header>
   <p class="takeaway">SDD fits almost any shack project, from platform ports to Arduino builds to station control.</p>
   <div class="notes"><ul>
 <li>This is a laundry list. SDD suits nearly anything.</li>
 <li>The screenshot is a keyer built from K6GTE's, ported from Linux to Mac.</li>
 </ul></div>
 </section>
-<section class="slide" id="s8" tabindex="-1">
-  <header><span class="num">8</span><h2>Vibe Coding, Can Be Amazing!</h2></header>
+<section class="slide" id="s7" tabindex="-1">
+  <header><span class="num">7</span><h2>Vibe Coding, Can Be Amazing!</h2></header>
   <p class="takeaway">Vibe coding nails the first 20% but leaves guessed assumptions, brittle code, and a lost chat.</p>
   <div class="notes"><ul>
 <li><strong class="poll">POLL</strong> How many of you have vibe coded?</li>
 <li><strong class="poll">POLL</strong> How many of you have used GitHub?</li>
+</ul></div>
+</section>
+<section class="slide" id="s8" tabindex="-1">
+  <header><span class="num">8</span><h2>Key Terms</h2></header>
+  <p class="takeaway">A small shared vocabulary is all you need to follow the rest of the talk.</p>
+  <div class="notes"><ul>
+<li><strong>Spec:</strong> the AI community's name for a Masterplan, the whole document.</li>
+<li><strong>Masterplan (MP):</strong> the 4-part Spec for your app: Ground Rules, Project Brief, Architecture, and Task Plan.</li>
+<li><strong>Masterplan Generator:</strong> a document that guides you in writing a masterplan for your app. It makes complex software buildable without software-engineering skills.</li>
+<li><strong>SDD:</strong> Spec-Driven Development, a process. The spec stays the source of truth as the code changes.</li>
 </ul></div>
 </section>
 <section class="slide" id="s9" tabindex="-1">
@@ -164,7 +164,7 @@ kbd{font:inherit; border:1px solid var(--rule); border-bottom-width:2px; border-
 </ul></div>
 </section>
 <section class="slide" id="s11" tabindex="-1">
-  <header><span class="num">11</span><h2>Masterplan Generator + Idea + Screenshot</h2></header>
+  <header><span class="num">11</span><h2>SDD in a Nutshell: Masterplan Generator + Idea + Screenshot</h2></header>
   <p class="takeaway"><strong>This is the talk in one slide.</strong></p>
   <div class="notes"><ul>
 <li>The name is not special; call it anything. The contents are not unique either. The four sections come from best practices at many tech companies (Amazon, Anthropic, Microsoft).</li>
@@ -186,7 +186,7 @@ kbd{font:inherit; border:1px solid var(--rule); border-bottom-width:2px; border-
   
 </section>
 <section class="slide" id="s14" tabindex="-1">
-  <header><span class="num">14</span><h2>The Masterplan Generator (Download from Link in Appendix)</h2></header>
+  <header><span class="num">14</span><h2>The Masterplan Generator</h2></header>
   <p class="takeaway">The generator lives on GitHub as plain, readable text anyone can open and reuse.</p>
   <div class="notes"><ul>
 <li>Each prompt carries a label: RULE (follow it during the build), DRAFT (write this part now and show me), USER INPUT (ask me first).</li>
@@ -198,7 +198,7 @@ kbd{font:inherit; border:1px solid var(--rule); border-bottom-width:2px; border-
   
 </section>
 <section class="slide" id="s16" tabindex="-1">
-  <header><span class="num">16</span><h2>It Works! Multiplatform Screenshots (QR Link in Appendix)</h2></header>
+  <header><span class="num">16</span><h2>It Works! Multiplatform Screenshots</h2></header>
   <p class="takeaway">One spec produced the same working app on Mac, Windows, and Linux.</p>
   
 </section>
@@ -214,58 +214,22 @@ kbd{font:inherit; border:1px solid var(--rule); border-bottom-width:2px; border-
   <header><span class="num">18</span><h2>Time for Your Road Trip! Your Idea (Questions?)</h2></header>
   <p class="takeaway">Close on the road-trip image and open the floor: Claude Code and GitHub are the transportation, your idea is the trip.</p>
   <div class="notes"><ul>
-<li>Callback to slide 3: same desert trails. The idea is the destination, Claude Code and GitHub are the vehicle, and the spec is the plan you drive from.</li>
+<li>Callback to slide 4: same desert trails. The idea is the destination, Claude Code and GitHub are the vehicle, and the spec is the plan you drive from.</li>
 <li>Invite questions. Leave this slide up through Q&amp;A.</li>
-<li>Keep the slide numbers handy. Type a number to jump: <strong>14</strong> for the generator, <strong>19</strong> for the repo links, <strong>20</strong> for references, <strong>23</strong> for the DX Spotter feature list.</li>
-<li>If someone asks for the side-by-side of vibe coding and SDD, slide 22 is in the backup section.</li>
+<li>Keep the slide numbers handy. Type a number to jump: <strong>14</strong> for the generator, <strong>17</strong> for the repo link, <strong>19</strong> for references.</li>
 </ul></div>
 </section>
 <h2 class="divider">Appendix</h2>
 <section class="slide" id="s19" tabindex="-1">
-  <header><span class="num">19</span><h2>Appendix – GitHub Links</h2></header>
-  <p class="takeaway">Everything shown today is in two repos, one for the talk and one for the app.</p>
-  <div class="notes"><ul>
-<li>Talk repo: <code>github.com/jcarter-labs/rsgb-sdd-n6yu</code>. It has the slides and the Masterplan Generator.</li>
-<li>Code repo: <code>github.com/jcarter-labs/dx-spotter-app</code>. It has the DX Spotter app and its example masterplan.</li>
-<li>The QR codes on the slide point to each repo.</li>
-<li>Contact: John Carter, N6YU, john@n6yu.com, <code>github.com/jcarter-labs</code>.</li>
-</ul></div>
-</section>
-<section class="slide" id="s20" tabindex="-1">
-  <header><span class="num">20</span><h2>Appendix – References</h2></header>
+  <header><span class="num">19</span><h2>Appendix – References</h2></header>
   <p class="takeaway">Where to go deeper on SDD and Claude Code.</p>
   
 </section>
-<section class="slide" id="s21" tabindex="-1">
-  <header><span class="num">21</span><h2>Find out more… (closing)</h2></header>
+<section class="slide" id="s20" tabindex="-1">
+  <header><span class="num">20</span><h2>Find out more… (closing)</h2></header>
   <p class="takeaway">How to reach me.</p>
   <div class="notes"><ul>
 <li>John Carter, N6YU, john@n6yu.com, <code>github.com/jcarter-labs</code>.</li>
-</ul></div>
-</section>
-<h2 class="divider">Backup</h2>
-<p class="divnote">These two slides sit after the closing slide in the deck. They are not in the main flow.</p>
-<section class="slide" id="s22" tabindex="-1">
-  <header><span class="num">22</span><h2>Vibe Prompt vs. SDD</h2></header>
-  <p class="takeaway">SDD trades a slower start for tested, repeatable, shareable results you can change later.</p>
-  <div class="notes"><ul>
-<li>Give the AI the basic idea <em>plus a screenshot</em>, then have it build the spec, i.e. the masterplan.</li>
-<li>Walk the rows: Prompt, Details, Testing, Speed, Later.</li>
-<li>The honest cost is the Speed row: SDD has a slower start and more work up front. The payoff is the Later row: edit the masterplan, rebuild from GitHub, add features or change OS.</li>
-</ul></div>
-</section>
-<section class="slide" id="s23" tabindex="-1">
-  <header><span class="num">23</span><h2>DX Spotter | The Working Result</h2></header>
-  <p class="takeaway">The spec-built app works: live RBN bandmap, POTA hunting, and three cluster types.</p>
-  <div class="notes"><ul>
-<li>Bandmap: live RBN spots with an adjustable window, working (compared with N1MM).</li>
-<li>POTA.APP hunting view: working (compared with POTA.APP).</li>
-<li>Frequency, bandscope window width, and timeout menu.</li>
-<li>Spotter selection: Local (within about 50 miles) and Regional (within about 250 miles).</li>
-<li>Cluster server menu: three major server types supported.</li>
-<li>Status indication for the RBN and POTA servers.</li>
-<li>Out of scope today: DE (spotter) specification, CAT control, and a mobile UI.</li>
-<li>One build produced green spots for POTA, so I kept that one as the starter screenshot.</li>
 </ul></div>
 </section>
   <p class="keys">End of notes · <kbd>Home</kbd> to return to top</p>
